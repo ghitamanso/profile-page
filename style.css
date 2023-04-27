@@ -1,0 +1,179 @@
+/* Write some CSS below : */
+
+
+/* 1. Global design first : Body, Headers, Colors, Fonts, Font size, Font weight */
+body {
+    background-image: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+    font-family: 'Newsreader', serif;
+    font-size: 20px;
+    font-weight: lighter;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #50394D;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 600;
+    color: #50394D;
+    font size: 22px;
+}
+
+h1,
+h2,
+#title {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    color: #4E416A
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 2. Appearance of html elements : Images, Links (buttons), Divs */
+.container {
+    width: 900px;
+    margin: 100px auto;
+}
+
+.colorful_card {
+    background-color: #cfa7eb58;
+    text-align: center;
+    border-radius: 5px;
+    Padding: 40px;
+    Margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px #9795f0;
+}
+
+.colorful_card:hover {
+    zoom: 1.1;
+    background-image: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+}
+
+
+#intro {
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+#title {
+    color: #50394D;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+#Photo_Ghita {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: -5px -10px 20px #9795f0
+}
+
+.btn-blue {
+    background-color: #3b41c5;
+    color: #ede5ec;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    box-shadow: 5px 10px 20px #9795f0;
+}
+
+.btn-blue:hover {
+    zoom: 1.1;
+    background-color: #a981bb;
+}
+
+.list-inline {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.list-inline li {
+    display: inline;
+}
+
+.list-inline i {
+    font-size: 50px;
+    color: grey;
+    letter-spacing: 30px;
+}
+
+.list-inline i:hover {
+    zoom: 2.2;
+    color: #974cf4
+}
+
+
+p {
+    font-weight: 300;
+}
+
+ul {
+    font-weight: 300;
+}
+
+#skills {
+    text-align: justify;
+    list-style: none;
+}
+
+.experience {
+    text-align: justify;
+}
+
+#qualities {
+    text-align: justify;
+    list-style: none;
+}
+
+.interest {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+.interest img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.color {
+    color: #50394D
+}
+
+* Breaking points */
+@media (max-width: 960px) {
+  .container {
+    width: 900px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 680px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 480px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr;
+  }
+}
